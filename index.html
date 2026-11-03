@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRENZY | Owner Dashboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090b12;color:#f4f6fb;font-family:Arial,sans-serif}
+header{padding:22px 6%;border-bottom:1px solid #252d40;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;font-weight:900;letter-spacing:2px}
+.logo span{color:#b9f56b}
+.status{color:#b9f56b;border:1px solid #46533c;border-radius:30px;padding:8px 12px;font-size:12px}
+main{max-width:1100px;margin:55px auto;padding:0 20px}
+.eyebrow{color:#b9f56b;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(35px,7vw,60px);margin:15px 0}
+p{color:#929bb0;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:35px 0}
+.card{background:#121725;border:1px solid #252d40;border-radius:16px;padding:22px}
+.label{color:#929bb0;font-size:12px}
+.value{font-size:28px;font-weight:bold;margin:12px 0}
+section{margin-top:40px}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+button{background:#252d40;color:white;border:0;border-radius:9px;padding:12px;font-weight:bold}
+.notice{margin-top:30px;padding:18px;background:#1b1520;border-left:3px solid #ff5b9d;border-radius:8px;color:#ddd}
+footer{margin-top:60px;padding:25px;border-top:1px solid #252d40;color:#929bb0;font-size:12px}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.actions{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">FRENZY <span>/ FRNZ</span></div>
+<div class="status">SOLANA OWNER CONSOLE</div>
+</header>
+<main>
+<div class="eyebrow">TOKEN OPERATIONS</div>
+<h1>FRENZY Dashboard</h1>
+<p>Your central dashboard for token information, market activity and treasury transparency.</p>
 
+<div class="grid">
+<div class="card"><div class="label">TOKEN</div><div class="value">$FRNZ</div><p>Solana</p></div>
+<div class="card"><div class="label">PROPOSED SUPPLY</div><div class="value">1B</div><p>Not yet verified on-chain</p></div>
+<div class="card"><div class="label">LIVE PRICE</div><div class="value">—</div><p>Market feed pending</p></div>
+<div class="card"><div class="label">HOLDERS</div><div class="value">—</div><p>Data connection pending</p></div>
+</div>
+
+<section>
+<h2>Owner controls</h2>
+<div class="actions">
+<div class="card"><h3>Treasury</h3><p>Transparent treasury tracking and transaction records.</p><button disabled>Integration pending</button></div>
+<div class="card"><h3>Liquidity</h3><p>Track liquidity positions and pool activity.</p><button disabled>Integration pending</button></div>
+<div class="card"><h3>Token burn</h3><p>Review burns with explicit wallet approval.</p><button disabled>Integration pending</button></div>
+</div>
+</section>
+
+<section>
+<h2>Market activity</h2>
+<div class="card"><p>Live price, trading volume, holders and transaction history will appear when verified market-data and Solana connections are configured.</p></div>
+</section>
+
+<div class="notice">
+Transparency: This is a dashboard starter, not a launched token. No live trading, fake volume or market manipulation is performed. Wallet and DEX integrations are not yet connected.
+</div>
+</main>
+<footer>FRENZY ($FRNZ) • Owner Dashboard</footer>
+</body>
+</html>
